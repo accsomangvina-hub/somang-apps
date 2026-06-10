@@ -7275,7 +7275,7 @@ function initApp(){
   document.getElementById('nl_ngay').value=today();
   document.getElementById('ns_ngay').value=today();
   document.getElementById('cd_ngay').value=today();
-  document.getElementById('filterCDNgay').value=today();
+  const _fcdEl=document.getElementById('filterCDNgay');if(_fcdEl)_fcdEl.value=today();
   document.getElementById('filterBCNgay').value=today();
   document.getElementById('filterBCThang').value=thisMonth();
   document.getElementById('filterNLThang').value=thisMonth();
